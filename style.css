@@ -1,0 +1,183 @@
+/* Estilo geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .jost-<uniquifier> {
+        font-family: "Jost", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f0000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-right: 4%;
+}
+.flex{
+    display: flex;
+}
+/* Estilo cabeçalho */
+
+header {
+    padding: 30px 4%;
+}
+
+header > .interface {
+    display:flex;
+    align-items: center;
+}
+
+header a {
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover {
+    color: #fff;
+    transform: scale(1.01);
+}
+header nav {
+    flex-grow:1;
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 20px 20px;
+    font-size: 25px;
+}
+header .bernardo-contato {
+    flex-shrink: 0;
+    transition: .2s;
+}
+header .bernardo-contato:hover {
+    transform: scale(1.005);
+}
+.bernardo-contato button {
+    padding: 10px 40px;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgb(68, 4, 39);
+    border:0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Estilo do topo do site */
+
+section.topo-do-site{
+    padding: 120px 4%;
+}
+
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.topo-do-site h1{
+    color: rgb(68, 4, 39);
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: rgb(160, 131, 131);
+    margin: 100px 0;
+    font-size: 23px;
+}
+
+/* Estilo dos meus projetos*/
+section.projetos{
+    padding: 90px 15%;
+}
+
+section.projetos .flex {
+    display: flex;
+    gap: 60px;
+}
+h2 {
+    color:rgb(160, 131, 131);
+    font-size: 40px;
+    text-align: center;
+}
+
+.projetos .projetos-box {
+    flex: 1;
+    min-height: 350px;
+    color: rgb(160, 131, 131);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .2s;
+}
+.projetos .projetos-box:hover {
+    transform: scale (1.05);
+    box-shadow: 0 0 20px rgb(160, 131, 131);
+}
+.projetos .projetos-box i {
+    font-size: 70px;
+    color: rgb(68, 4, 39);
+}
+.projetos .projetos-box h3{
+    font-size: 26px;
+    margin: 15px 0;
+}
+.projetos .projetos-box p{
+    font-size: 23px;
+}
+
+/* Estilo do Contato */
+
+section.contato {
+    padding: 90px 15%;
+}
+
+.contato-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contato-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contato-info {
+    color:rgb(73, 73, 73);
+    font-size: 28px;
+}
+h2 {
+    color:rgb(73, 73, 73);
+}
